@@ -1,0 +1,101 @@
+[
+  {
+    "id": "toast-duration-default",
+    "type": "fact",
+    "question": "How long do toast notifications stay on screen before they auto-dismiss?",
+    "expected": ["carbon/components/notification/usage#toast-dismissal"]
+  },
+  {
+    "id": "button-internal-padding",
+    "type": "fact",
+    "question": "What internal padding should buttons have?",
+    "expected": ["carbon/components/button/style#structure"]
+  },
+  {
+    "id": "button-label-case",
+    "type": "fact",
+    "question": "Should button labels use sentence case or title case?",
+    "expected": ["carbon/components/button/usage#content-main-elements-button-label"],
+    "mustNotInclude": ["synthetic/credit-card"]
+  },
+  {
+    "id": "button-label-formula",
+    "type": "fact",
+    "question": "What content formula should button labels follow?",
+    "expected": ["carbon/components/button/usage#content-main-elements-button-label"]
+  },
+  {
+    "id": "primary-buttons-per-screen",
+    "type": "decision",
+    "question": "How many primary buttons can a screen have?",
+    "expected": [
+      "synthetic/design-ops/decision-log-2026#2026-06",
+      "carbon/components/button/usage#formatting-emphasis-a-single-high-emphasis-button",
+      "carbon/components/button/usage#primary-button-best-practices"
+    ]
+  },
+  {
+    "id": "lending-toast-override",
+    "type": "conflict",
+    "question": "Do loan approval toasts in the Lending app stay on screen longer than normal?",
+    "expected": [
+      "synthetic/lending/button-overrides#toast-duration",
+      "synthetic/design-ops/decision-log-2026#2026-04"
+    ]
+  },
+  {
+    "id": "financial-confirmation-toasts",
+    "type": "freshness",
+    "question": "Should toasts that confirm a payment auto-dismiss?",
+    "expected": ["synthetic/design-ops/decision-log-2026#2026-04"],
+    "mustNotInclude": ["synthetic/credit-card"]
+  },
+  {
+    "id": "big-purple-button",
+    "type": "synonym",
+    "question": "What do customers mean when they talk about the big purple button?",
+    "expected": ["synthetic/research/onboarding-interviews-synthesis#finding-1"]
+  },
+  {
+    "id": "vague-labels-research",
+    "type": "research",
+    "question": "What did research find about vague labels like Continue or OK?",
+    "expected": ["synthetic/research/onboarding-interviews-synthesis#finding-3"]
+  },
+  {
+    "id": "when-to-use-modal",
+    "type": "fact",
+    "question": "When should I use a modal?",
+    "expected": ["carbon/components/modal/usage#overview-when-to-use"]
+  },
+  {
+    "id": "tooltip-interactive",
+    "type": "fact",
+    "question": "Can I put links or buttons inside a tooltip?",
+    "expected": [
+      "carbon/components/tooltip/usage#overview-when-not-to-use",
+      "carbon/components/toggletip/usage"
+    ]
+  },
+  {
+    "id": "danger-button",
+    "type": "fact",
+    "question": "When should I use a danger button?",
+    "expected": ["carbon/components/button/usage#danger-button"]
+  },
+  {
+    "id": "hero-banner-button-size",
+    "type": "conflict",
+    "question": "What button size should I use in a marketing hero banner?",
+    "expected": [
+      "synthetic/brand/marketing-surfaces#size",
+      "carbon/components/button/usage#formatting-button-sizes"
+    ]
+  },
+  {
+    "id": "primer-css-decision",
+    "type": "decision",
+    "question": "Why did Primer decide to move styling to CSS?",
+    "expected": ["primer/adrs/adr-016-css"]
+  }
+]

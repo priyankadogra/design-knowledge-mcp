@@ -1,0 +1,7 @@
+node_modules/
+dist/
+logs/*.jsonl
+# Third-party sources are fetched at build time, not committed (see scripts/fetch-corpus.ts)
+corpus/vendor/
+.env
+.DS_Store

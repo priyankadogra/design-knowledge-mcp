@@ -1,0 +1,30 @@
+{
+  "name": "design-knowledge-mcp",
+  "version": "0.1.0",
+  "description": "An MCP server that gives agents reliable, token-efficient context from scattered design-system knowledge.",
+  "scripts": {
+    "fetch-corpus": "tsx scripts/fetch-corpus.ts",
+    "dev": "tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "typecheck": "tsc --noEmit",
+    "eval": "tsx evals/run.ts",
+    "search": "tsx scripts/search-cli.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "gray-matter": "^4.0.3",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}

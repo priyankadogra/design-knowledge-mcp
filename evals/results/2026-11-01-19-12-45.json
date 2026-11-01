@@ -1,0 +1,224 @@
+{
+  "summary": {
+    "label": "baseline",
+    "date": "2026-11-01T19:12:45.589Z",
+    "questions": 14,
+    "recall@5": 0.857,
+    "hit@1": 0.571,
+    "mrr": 0.696,
+    "avgTokensReturned": 519,
+    "outdatedLeaks": 0
+  },
+  "rows": [
+    {
+      "id": "toast-duration-default",
+      "type": "fact",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 504,
+      "violations": [],
+      "top": [
+        "carbon/components/notification/usage#toast-dismissal",
+        "synthetic/design-ops/decision-log-2026#2026-04-persistent-toasts-for-financial-confirmations",
+        "carbon/components/notification/usage#toast"
+      ]
+    },
+    {
+      "id": "button-internal-padding",
+      "type": "fact",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 543,
+      "violations": [],
+      "top": [
+        "carbon/components/button/style#structure-button-structure",
+        "synthetic/lending/button-overrides#internal-padding",
+        "carbon/components/button/style#structure-ghost-button-structure"
+      ]
+    },
+    {
+      "id": "button-label-case",
+      "type": "fact",
+      "rank": 0,
+      "hit1": false,
+      "hitK": false,
+      "rr": 0,
+      "tokens": 508,
+      "violations": [],
+      "top": [
+        "carbon/components/data-table/usage#content-main-elements-column-titles",
+        "carbon/components/content-switcher/style#typography",
+        "carbon/components/contained-list/style#typography"
+      ]
+    },
+    {
+      "id": "button-label-formula",
+      "type": "fact",
+      "rank": 2,
+      "hit1": false,
+      "hitK": true,
+      "rr": 0.5,
+      "tokens": 537,
+      "violations": [],
+      "top": [
+        "carbon/components/button/usage#content-overflow-content",
+        "carbon/components/button/usage#content-main-elements-button-label",
+        "carbon/components/progress-indicator/usage#content-main-elements-label"
+      ]
+    },
+    {
+      "id": "primary-buttons-per-screen",
+      "type": "decision",
+      "rank": 4,
+      "hit1": false,
+      "hitK": true,
+      "rr": 0.25,
+      "tokens": 523,
+      "violations": [],
+      "top": [
+        "synthetic/research/onboarding-interviews-synthesis#finding-1-people-hunt-for-the-big-purple-button",
+        "carbon/components/button/usage#formatting-emphasis-multiple-button-emphasis",
+        "carbon/components/button/usage#formatting-button-groups"
+      ]
+    },
+    {
+      "id": "lending-toast-override",
+      "type": "conflict",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 519,
+      "violations": [],
+      "top": [
+        "synthetic/lending/button-overrides#toast-duration",
+        "synthetic/research/onboarding-interviews-synthesis#finding-2-approval-messages-vanish-too-fast",
+        "synthetic/design-ops/decision-log-2026#2026-04-persistent-toasts-for-financial-confirmations"
+      ]
+    },
+    {
+      "id": "financial-confirmation-toasts",
+      "type": "freshness",
+      "rank": 2,
+      "hit1": false,
+      "hitK": true,
+      "rr": 0.5,
+      "tokens": 549,
+      "violations": [],
+      "top": [
+        "carbon/components/notification/usage#toast-dismissal",
+        "synthetic/design-ops/decision-log-2026#2026-04-persistent-toasts-for-financial-confirmations",
+        "carbon/components/notification/usage#overview-variants"
+      ]
+    },
+    {
+      "id": "big-purple-button",
+      "type": "synonym",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 521,
+      "violations": [],
+      "top": [
+        "synthetic/research/onboarding-interviews-synthesis#finding-1-people-hunt-for-the-big-purple-button",
+        "carbon/components/button/usage#formatting-emphasis-multiple-button-emphasis",
+        "carbon/components/button/usage#formatting-button-groups"
+      ]
+    },
+    {
+      "id": "vague-labels-research",
+      "type": "research",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 522,
+      "violations": [],
+      "top": [
+        "synthetic/research/onboarding-interviews-synthesis#finding-3-vague-labels-slow-people-down",
+        "carbon/components/modal/usage#content-buttons",
+        "synthetic/research/onboarding-interviews-synthesis#finding-1-people-hunt-for-the-big-purple-button"
+      ]
+    },
+    {
+      "id": "when-to-use-modal",
+      "type": "fact",
+      "rank": 0,
+      "hit1": false,
+      "hitK": false,
+      "rr": 0,
+      "tokens": 488,
+      "violations": [],
+      "top": [
+        "carbon/components/popover/usage#references",
+        "carbon/components/modal/usage#related-patterns",
+        "carbon/components/modal/usage#formatting-anatomy"
+      ]
+    },
+    {
+      "id": "tooltip-interactive",
+      "type": "fact",
+      "rank": 2,
+      "hit1": false,
+      "hitK": true,
+      "rr": 0.5,
+      "tokens": 554,
+      "violations": [],
+      "top": [
+        "carbon/components/accordion/accessibility#development-considerations",
+        "carbon/components/tooltip/usage#overview-when-not-to-use-include-interactive-elements",
+        "carbon/components/popover/usage#universal-behaviors-nesting"
+      ]
+    },
+    {
+      "id": "danger-button",
+      "type": "fact",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 554,
+      "violations": [],
+      "top": [
+        "carbon/components/button/usage#danger-button",
+        "carbon/components/button/usage#modifiers-icon-only-buttons-danger-buttons-cannot-be-used-in-an-icon-only-form",
+        "carbon/components/button/style#color-danger-tertiary-button-color"
+      ]
+    },
+    {
+      "id": "hero-banner-button-size",
+      "type": "conflict",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 474,
+      "violations": [],
+      "top": [
+        "synthetic/brand/marketing-surfaces#size",
+        "synthetic/brand/marketing-surfaces#intro",
+        "carbon/components/button/style#size"
+      ]
+    },
+    {
+      "id": "primer-css-decision",
+      "type": "decision",
+      "rank": 1,
+      "hit1": true,
+      "hitK": true,
+      "rr": 1,
+      "tokens": 467,
+      "violations": [],
+      "top": [
+        "primer/adrs/adr-016-css#decisions-out-of-scope",
+        "primer/adrs/adr-016-css#status",
+        "primer/adrs/adr-022-css-layer-names#decision-impact"
+      ]
+    }
+  ]
+}
